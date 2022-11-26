@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MovilEmpleo.IngresoPostulante">
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout>
+            <StackLayout HorizontalOptions="CenterAndExpand">
+                <Label Text="Registro de Postulantes" TextColor="Black" FontSize="Medium" FontAttributes="Bold"></Label>
+            </StackLayout>
+            <StackLayout Margin="0,25,0,0">
+                <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="0" Margin="0" CornerRadius="50" HorizontalOptions="FillAndExpand">
+                    <StackLayout Orientation="Horizontal">
+                        <Frame BackgroundColor="AliceBlue" CornerRadius="50" HeightRequest="25" WidthRequest="25" Padding="0" Margin="5,5,0,5" HorizontalOptions="Start"></Frame>
+                        <Entry Placeholder="Nombre" TextColor=" #34495e " HorizontalOptions="FillAndExpand" Margin="0,0,10,0" x:Name="txtNombre"></Entry>
+                    </StackLayout>
+
+                </Frame>
+                <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="0" Margin="0,3,0,0" CornerRadius="50" HorizontalOptions="FillAndExpand">
+                    <StackLayout Orientation="Horizontal">
+                        <Frame BackgroundColor="AliceBlue" CornerRadius="50" HeightRequest="25" WidthRequest="25" Padding="0" Margin="7,7,0,7" HorizontalOptions="Start"></Frame>
+                        <Entry Placeholder="Apellido"  x:Name="txtApellido" TextColor=" #34495e " HorizontalOptions="FillAndExpand" Margin="0,0,10,0"></Entry>
+                    </StackLayout>
+
+                </Frame>
+                <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="0" Margin="0" CornerRadius="50" HorizontalOptions="FillAndExpand">
+                    <StackLayout Orientation="Horizontal">
+                        
+                        
+                        <Label x:Name="lbl" FontSize="Large"></Label>
+                        <Picker x:Name="pckInstruccion" Title="Instruccion Academica" TextColor="Black"></Picker>
+                        
+                    </StackLayout>
+
+                </Frame>
+                <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="0" Margin="0" CornerRadius="50" HorizontalOptions="FillAndExpand">
+                    <StackLayout Orientation="Horizontal">
+                        <Frame BackgroundColor="AliceBlue" CornerRadius="50" HeightRequest="25" WidthRequest="25" Padding="0" Margin="5,5,0,5" HorizontalOptions="Start"></Frame>
+                        <Entry Placeholder="Email" TextColor=" #34495e " HorizontalOptions="FillAndExpand" Margin="0,0,10,0" x:Name="txtEmail" Keyboard="Email"></Entry>
+                    </StackLayout>
+
+                </Frame>
+                <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="0" Margin="0" CornerRadius="50" HorizontalOptions="FillAndExpand">
+                    <StackLayout Orientation="Horizontal">
+                        <Frame BackgroundColor="AliceBlue" CornerRadius="50" HeightRequest="25" WidthRequest="25" Padding="0" Margin="5,5,0,5" HorizontalOptions="Start"></Frame>
+                        <Entry Placeholder="Edad" TextColor=" #34495e " HorizontalOptions="FillAndExpand" Margin="0,0,10,0" x:Name="txtEdad" Keyboard="Numeric"></Entry>
+                    </StackLayout>
+
+                </Frame>
+                <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="0" Margin="0" CornerRadius="50" HorizontalOptions="FillAndExpand">
+                    <StackLayout Orientation="Horizontal">
+                        <Frame BackgroundColor="AliceBlue" CornerRadius="50" HeightRequest="25" WidthRequest="25" Padding="0" Margin="5,5,0,5" HorizontalOptions="Start"></Frame>
+                        
+                        <Entry Placeholder="Identificacion" TextColor=" #34495e " HorizontalOptions="FillAndExpand" Margin="0,0,10,0" x:Name="txtIdenti"></Entry>
+                        
+                    </StackLayout>
+
+                </Frame>
+                <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="0" Margin="0" CornerRadius="50" HorizontalOptions="FillAndExpand">
+                    <StackLayout Orientation="Horizontal">
+                        <Frame BackgroundColor="AliceBlue" CornerRadius="50" HeightRequest="25" WidthRequest="25" Padding="0" Margin="5,5,0,5" HorizontalOptions="Start"></Frame>
+                        <Entry Placeholder="Titulo" TextColor=" #34495e " HorizontalOptions="FillAndExpand" Margin="0,0,10,0" x:Name="txtTitulo"></Entry>
+                    </StackLayout>
+
+                </Frame>
+                <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="0" Margin="0" CornerRadius="50" HorizontalOptions="FillAndExpand">
+                    <StackLayout Orientation="Horizontal">
+                        <Frame BackgroundColor="AliceBlue" CornerRadius="50" HeightRequest="25" WidthRequest="25" Padding="0" Margin="5,5,0,5" HorizontalOptions="Start"></Frame>
+                        <Entry Placeholder="Experiencia" TextColor=" #34495e " HorizontalOptions="FillAndExpand" Margin="0,0,10,0" x:Name="txtExperiencia"></Entry>
+                    </StackLayout>
+
+                </Frame>
+
+            </StackLayout>
+
+            <Button Text="Ingresar" BackgroundColor=" #34495e " TextColor="White" FontAttributes="Bold" CornerRadius="30"
+                                x:Name="btnInsert" Clicked="btnInsert_Clicked"></Button>
+            <StackLayout Orientation="Vertical">
+                <Label></Label>
+                <BoxView HeightRequest="1" BackgroundColor="Black" HorizontalOptions="FillAndExpand" />
+                
+            </StackLayout>
+            <Button Text="Regresar" BackgroundColor=" #3498db " TextColor="White" FontAttributes="Bold" CornerRadius="30"
+                                x:Name="btnRegresar" Clicked="btnRegresar_Clicked"></Button>
+            
+                <Label x:Name="lblLocation"> </Label>
+                <Button Text="Geolocalizacion" BackgroundColor=" #3498db " TextColor="White" FontAttributes="Bold" CornerRadius="30"
+                                x:Name="btnLocation" Clicked="btnLocation_Clicked"></Button>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

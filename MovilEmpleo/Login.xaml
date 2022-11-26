@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MovilEmpleo.Login">
+    
+    <StackLayout Padding="0">
+        <Grid>
+            <StackLayout Padding="0" Margin="0">
+                
+                <Frame BackgroundColor=" #1b4f72 " HeightRequest="130" HorizontalOptions="FillAndExpand">
+                    <Image Source="logo.png"
+                           HeightRequest="350"
+                           WidthRequest="110"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Start"
+                           ></Image>
+                </Frame>
+            </StackLayout>
+
+            <StackLayout Margin="15,110,15,0">
+                <Frame BackgroundColor="White" HasShadow="True" HeightRequest="320" HorizontalOptions="FillAndExpand">
+                    <StackLayout>
+                        <StackLayout HorizontalOptions="CenterAndExpand">
+                            <Label Text="Iniciar sesión" TextColor="Black" FontSize="Medium" FontAttributes="Bold"></Label>
+                        </StackLayout>
+                        <StackLayout Margin="0,25,0,0">
+                            <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="0" Margin="0" CornerRadius="50" HorizontalOptions="FillAndExpand">
+                                <StackLayout Orientation="Horizontal">
+                                    <Frame BackgroundColor="AliceBlue" CornerRadius="50" HeightRequest="25" WidthRequest="25" Padding="0" Margin="5,5,0,5" HorizontalOptions="Start"></Frame>
+                                    <Entry Placeholder="Usuario" TextColor=" #34495e " HorizontalOptions="FillAndExpand" Margin="0,0,10,0" x:Name="txtUsuario"></Entry>
+                                </StackLayout>
+
+                            </Frame>
+                            <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="0" Margin="0,3,0,0" CornerRadius="50" HorizontalOptions="FillAndExpand">
+                                <StackLayout Orientation="Horizontal">
+                                    <Frame BackgroundColor="AliceBlue" CornerRadius="50" HeightRequest="25" WidthRequest="25" Padding="0" Margin="7,7,0,7" HorizontalOptions="Start"></Frame>
+                                    <Entry Placeholder="Contraseña" IsPassword="true" x:Name="txtPassword" TextColor=" #34495e " HorizontalOptions="FillAndExpand" Margin="0,0,10,0"></Entry>
+                                </StackLayout>
+
+                            </Frame>
+
+                        </StackLayout>
+
+                        <Button Text="Iniciar sesión" BackgroundColor=" #34495e " TextColor="White" FontAttributes="Bold" CornerRadius="30"
+                                x:Name="btnIniciar" Clicked="btnIniciar_Clicked"></Button>
+                        <StackLayout Orientation="Vertical">
+                            <Label></Label>
+                            <BoxView HeightRequest="1" BackgroundColor="Black" HorizontalOptions="FillAndExpand" />
+                            <Label Text="No tienes cuenta?" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"></Label>
+                        </StackLayout>
+                        <Button Text="Registrate" BackgroundColor=" #3498db " TextColor="White" FontAttributes="Bold" CornerRadius="30"
+                                x:Name="btnRegistrar" Clicked="btnRegistrar_Clicked"></Button>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </Grid>
+
+    </StackLayout>
+</ContentPage>

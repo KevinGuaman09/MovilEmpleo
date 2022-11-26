@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MovilEmpleo.Reclutador"
+             IconImageSource="reclutadores.png"
+             Title="Reclutadores">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Label Text="Registro de Reclutadores" FontSize="30"
+                   FontAttributes="Bold"
+                   HorizontalTextAlignment="Center"/>
+            <Label x:Name="texto" Text=""></Label>
+            <!--<Button Text="Consultar"
+                x:Name="btnGet"
+                Clicked="btnGet_Clicked">
+                
+        </Button>-->
+            <ListView x:Name="MyList">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout>
+                                <!--<Label x:Name="lblid" Text="{Binding id_postulante}"></Label>
+                            <Label x:Name="lblnombre" Text="{Binding nombre}"></Label>-->
+                                <Label x:Name="lblNombre" Text="{Binding nombre}"></Label>
+                                <Label x:Name="lblEmail" Text="{Binding email}"></Label>
+                                <Label x:Name="lblTelefono" Text="{Binding telefono}"></Label>
+                                <Label x:Name="lblDirec" Text="{Binding direccion}"></Label>
+                                <Label x:Name="lblIdPost" Text="{Binding id_postulante}"></Label>
+                                <Label x:Name="lblIdEmp" Text="{Binding id_empresa}"></Label>
+                                
+
+
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+
+            </ListView>
+            <Button
+            x:Name="btnIng"
+            Text="Ingresar Datos"
+                BackgroundColor=" #3498db " TextColor="White" FontAttributes="Bold" CornerRadius="30"
+            Clicked="btnIng_Clicked"
+            >
+
+            </Button>
+            <Label></Label>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

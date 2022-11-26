@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MovilEmpleo.Registro">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Registro Usuario"
+                   FontSize="25"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   TextColor="Gray"
+                />
+            <Entry x:Name="txtNombre" Placeholder="Nombre"></Entry>
+            <Entry x:Name="txtUser" Placeholder="Usuario"></Entry>
+            <Entry x:Name="txtPassword" Placeholder="Password"></Entry>
+            <Button x:Name="btnGuardar" Text="Guardar" Clicked="btnGuardar_Clicked" BackgroundColor=" #3498db " TextColor="White" FontAttributes="Bold" CornerRadius="30"></Button>
+            <Button x:Name="btnSalir" Text="Regresar" Clicked="btnSalir_Clicked" BackgroundColor="IndianRed" TextColor="White" FontAttributes="Bold" CornerRadius="30"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
